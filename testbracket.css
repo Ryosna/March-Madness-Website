@@ -1,5 +1,5 @@
 
-body {
+body{
   display: flex;
   flex-direction: column;
 }
@@ -16,7 +16,6 @@ body {
 
 .bracket{
   width: 650px;
-  height: 650px;
 }
 
 .region{
@@ -40,35 +39,41 @@ body {
   justify-content: center;
   list-style: none;
   padding-left:0px;
-  width:20%;
-}
-
-.round .spacer{ flex-grow:1; }
-.round .spacer:first-child,
-.round .spacer:last-child{ flex-grow:.5; }
-
-.li {
-  flex-grow: 1;
-}
-
-.round .game-spacer{
-  flex-grow:1;
-}
-
-.game-top{ border-bottom:1px solid #000; }
-
-.game-bottom{ border-top:1px solid #000; }
+  width:14.285714%;
   
-.leftToRight{ 
-  border-right:1px solid #000;
-  min-height:40px;
 }
 
-.rightToLeft{ 
-    border-left:1px solid #000;
-    min-height:40px;
+.round .spacer{ flex-grow:2; }
+.round .spacer:first-child,
+.round .spacer:last-child{ flex-grow:1; }
+.top-regions .region-winner{ flex-grow: 1; border-top: 1px solid black; }
+.bottom-regions .region-winner{ flex-grow: 1; border-bottom: 1px solid black; }
+
+.round .game-top{ border-top:1px solid #000; flex-grow: 1; }
+
+.round .game-bottom{ border-bottom:1px solid #000; flex-grow: 1; }
+.lr .game-bottom{ 
+  border-right:1px solid #000;
 }
+
+.rl .game-bottom{ 
+  border-left:1px solid #000;
+}
+
+.lr .game-top{ 
+  border-right:1px solid #000;
+}
+
+.rl .game-top{ 
+    border-left:1px solid #000;
+}
+
 h1{
   text-align: center;
 }
+
+b{
+  float: right;
+}
+
 
